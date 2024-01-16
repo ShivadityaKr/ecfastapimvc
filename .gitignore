@@ -1,0 +1,64 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+myvenv/
+env/
+*.env
+.Python
+apiEnv/
+myenv/
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+*.code-workspace
+
+# Dependency directories
+dist/
+build/
+lib/
+bin/
+__pypackages__/
+*.egg-info/
+
+# Logs and cache
+logs/
+*.log
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+__pycache__/
+cache/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Environment-specific files
+*.env
+.env.*
+
+# System and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.bak
+*.backup
+*.~*
+
+# Compiled templates
+*.pyz
+
+# Docker
+.dockerignore
+Dockerfile*
+docker-compose*.yml
+
+# database
+*.db
