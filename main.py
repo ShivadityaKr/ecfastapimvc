@@ -1,7 +1,7 @@
 # just load all the controllers
 import controllers
+from utils.config import settings
 import uvicorn
-from utils.config import Config
 from utils.middleware import LogIncomingRequest, exception_handler, validation_exception_handler
 from utils.middleware.exception_handlers import http_exception_handler
 from fastapi import FastAPI, Depends
@@ -14,9 +14,9 @@ from fastapi_router_controller import Controller, ControllersTags
 #### Configure the main application #####
 #########################################
 app = FastAPI(
-    title='{}'.format(Config.read('app', 'name')),
-    version='0.0.1',
-    docs_url=Config.read('app', 'api-docs.path'),
+    title= settings.PROJECT_NAME,
+    version= settings.PROJECT_VERSION,
+    docs_url= settings.PROJECT_API_DOCS,
     openapi_tags=ControllersTags)
 
 # configuring handler for validation error in order to format the response

@@ -1,8 +1,8 @@
 from fastapi import Depends
 from utils.config.database import get_db
-from schema.usermodels import User
+from schema.userschema import User
 from sqlalchemy.orm import Session
-from model.userschema import RegisterUser
+from model.usermodel import RegisterUser
 from utils.config.hashing import Hashing
 from fastapi.exceptions import RequestValidationError, HTTPException
 from exceptions.request_validation import EMAIL_EXISTS

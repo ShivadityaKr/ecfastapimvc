@@ -4,8 +4,8 @@ from utils.logger import Logger
 from services.userservice import UserService
 from utils.config.database import get_db
 from sqlalchemy.orm import Session
-from model.userschema import RegisterUser
-from schema.usermodels import User
+from model.usermodel import RegisterUser
+from schema.userschema import User
 from environment.router.urls import URLs
 
 logger = Logger()
